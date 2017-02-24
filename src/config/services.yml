@@ -1,0 +1,11 @@
+services:
+ http_client:
+  class: \GuzzleHttp\Client
+
+ itemlookup_client:
+  class: \NicolasMugnier\AdvertisingApi\ItemLookup
+  arguments: ['@http_client']
+
+ browsenodelookup_client:
+  class: \NicolasMugnier\AdvertisingApi\BrowseNodeLookup
+  arguments: ['@http_client']
