@@ -35,4 +35,5 @@ $response = $app->getContainer()->get('browsenodelookup_client')
     ->setBrowseNodeId('340856031')
     ->search();
     
-echo $response->getBody();```
+echo $response->getBody();
+```
